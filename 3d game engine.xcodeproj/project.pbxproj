@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A0DE57812CB43B110087D784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DE57802CB43B110087D784 /* Foundation.framework */; };
+		A0DE57832CB43B1B0087D784 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DE57822CB43B1B0087D784 /* Metal.framework */; };
+		A0DE57852CB43B2F0087D784 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DE57842CB43B2F0087D784 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A0DE57632CB436830087D784 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +33,9 @@
 		A0DE574D2CB436810087D784 /* 3d game engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3d game engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DE57622CB436830087D784 /* 3d game engineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "3d game engineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DE576C2CB436830087D784 /* 3d game engineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "3d game engineUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DE57802CB43B110087D784 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0DE57822CB43B1B0087D784 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		A0DE57842CB43B2F0087D784 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DE57832CB43B1B0087D784 /* Metal.framework in Frameworks */,
+				A0DE57812CB43B110087D784 /* Foundation.framework in Frameworks */,
+				A0DE57852CB43B2F0087D784 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +90,7 @@
 				A0DE574F2CB436810087D784 /* 3d game engine */,
 				A0DE57652CB436830087D784 /* 3d game engineTests */,
 				A0DE576F2CB436830087D784 /* 3d game engineUITests */,
+				A0DE577F2CB43B110087D784 /* Frameworks */,
 				A0DE574E2CB436810087D784 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +103,16 @@
 				A0DE576C2CB436830087D784 /* 3d game engineUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A0DE577F2CB43B110087D784 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0DE57842CB43B2F0087D784 /* QuartzCore.framework */,
+				A0DE57822CB43B1B0087D784 /* Metal.framework */,
+				A0DE57802CB43B110087D784 /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +418,7 @@
 				DEVELOPMENT_TEAM = KD635MZ77D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"/Users/arunyadav/Desktop/small projects/3d game engine/metal-cpp\"";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -421,6 +445,7 @@
 				DEVELOPMENT_TEAM = KD635MZ77D;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "\"/Users/arunyadav/Desktop/small projects/3d game engine/metal-cpp\"";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
