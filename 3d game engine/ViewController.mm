@@ -1,28 +1,21 @@
-//
-//  ViewController.m
-//  3d game engine
-//
-//  Created by Arun yadav on 07/10/24.
-//
-
 #import "ViewController.h"
 #import "RendererAdapter.h"
 
 @implementation ViewController
 {
-    MTKView * _view;
-    
-    RendererAdapter * _pRendererAdapter;
+  MTKView * _view;
+  
+  RendererAdapter * _pRendererAdapter;
 }
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+  [super viewDidLoad];
 
-    // Do any additional setup after loading the view.
-    _view = (MTKView *)self.view;
-    _view.device = MTLCreateSystemDefaultDevice();
-    _pRendererAdapter = [RendererAdapter alloc];
-    [_pRendererAdapter draw:_view.currentDrawable device:_view.device];
+  // Do any additional setup after loading the view.
+  _view = (MTKView *)self.view;
+  _view.device = MTLCreateSystemDefaultDevice();
+  _pRendererAdapter = [[RendererAdapter alloc]initWithMTKView:_view];
+  _view.delegate = _pRendererAdapter;
 }
 
 @end
